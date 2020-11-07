@@ -3,13 +3,17 @@ const lunchButton = document.querySelector('.lunch-button');
 const allButton = document.querySelector('.all-button');
 const breakfastButton = document.querySelector('.breakfast-button');
 const dinnerButton = document.querySelector('.dinner-button');
+const buttons = document.querySelectorAll('.toggle');
 
 const breakfastRecipes = document.querySelectorAll('.breakfast');
 const lunchRecipes = document.querySelectorAll('.lunch');
 const dessertRecipes = document.querySelectorAll('.dessert');
 const allCards = document.querySelectorAll('.card');
 
-const newButtonFunction = (category) => {
+const newButtonFunction = (event, category) => {
+  buttons.forEach((each) => each.classList.remove('clicked'));
+  event.target.classList.add('clicked');
+
   const visibleCards = [...allCards].filter((card) =>
     card.classList.contains(category)
   );
@@ -48,8 +52,14 @@ const newButtonFunction = (category) => {
   });
 };
 
-allButton.addEventListener('click', () => newButtonFunction('card'));
-breakfastButton.addEventListener('click', () => newButtonFunction('breakfast'));
-lunchButton.addEventListener('click', () => newButtonFunction('lunch'));
-dinnerButton.addEventListener('click', () => newButtonFunction('dinner'));
-dessertButton.addEventListener('click', () => newButtonFunction('dessert'));
+allButton.addEventListener('click', () => newButtonFunction(event, 'card'));
+breakfastButton.addEventListener('click', () =>
+  newButtonFunction(event, 'breakfast')
+);
+lunchButton.addEventListener('click', () => newButtonFunction(event, 'lunch'));
+dinnerButton.addEventListener('click', () =>
+  newButtonFunction(event, 'dinner')
+);
+dessertButton.addEventListener('click', () =>
+  newButtonFunction(event, 'dessert')
+);

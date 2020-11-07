@@ -127,6 +127,17 @@ h5.card-title {
   margin: 0.5rem;
   background: none;
 }
+.buttons-container button:active {
+  background-color: green;
+  color: white;
+}
+.buttons-container button:focus {
+  outline: none;
+}
+.buttons-container button.clicked {
+  background-color: rgb(80, 151, 80);
+  color: white;
+}
 .category-container {
   position: relative;
   top: -12.5px;
@@ -143,9 +154,13 @@ h5.card-title {
   height: 100%;
   width: 60%;
   color: white;
-  background-color: rgb(190, 90, 60);
+  background-color: rgb(204, 92, 58);
   border-radius: 5px;
 }
 .category-name p {
   margin: 0;
+}
+.clicked {
+  background: green;
+  color: white;
 }
