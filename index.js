@@ -23,7 +23,6 @@ const newButtonFunction = (event, category) => {
   visibleCards.forEach((card) => {
     //initial
     const initial = card.getBoundingClientRect(); //0 0
-    console.log('initial', initial);
     //final
     card.style.display = 'block'; // 180 180
     invisibleCards.forEach((each) => {
@@ -32,7 +31,6 @@ const newButtonFunction = (event, category) => {
     const final = card.getBoundingClientRect();
     invisibleCards.forEach((each) => (each.style.display = 'block'));
     card.style.display = 'none';
-    console.log('final', final);
     //invert
     const translateX = initial.left - final.left;
     const translateY = initial.top - final.top;
@@ -40,7 +38,6 @@ const newButtonFunction = (event, category) => {
     const scaleY = initial.height / final.height;
     card.style.transition = 'none';
     card.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scaleX}, ${scaleY})`;
-    console.log('diff', translateX, translateY);
   });
   invisibleCards.forEach((each) => (each.style.display = 'none'));
   visibleCards.forEach((card) => {
