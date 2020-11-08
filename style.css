@@ -1,17 +1,5 @@
 
-
-.col-md-3 {
-
-	background-color: #e2f4ce;
-};
-.col-md-9 {
-	background-color: #e2f4ce;
-};
-
-.navbar {
-
-background-color: #e2f4ce;	
-};
+/*BASIC CSS CODE*/
 
 .card-title {
 
@@ -23,20 +11,25 @@ text-align: center;
   background-color: #a3d300b3!important;
 };
 
-/* Modify the backgorund color */ 
-.navbar-custom { 
-    background-color: #e2f4ce; 
-} 
-
 h5.card-title {
 
 	text-align: center;
 };
 
-/* Video Banner Code */
+/* centered columns styles */
+  .row-centered {
+    text-align:center;
+  }
+  .col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+  }
 
 
-/* End of Video Banner Code */
 
 /*image zoom hover effect*/
 .hovereffect {
@@ -115,3 +108,13 @@ h5.card-title {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
+/****************** SPYRIDON'S CSS CODE ***************************/
+
+
+
+/****************** FELIPE'S CSS CODE ***************************/
+
+
+
+/****************** PATRICIA'S CSS CODE ***************************/
