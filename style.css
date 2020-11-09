@@ -1,19 +1,4 @@
-/* * {
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-} */
-.col-md-3 {
-  background-color: #e2f4ce;
-}
-.col-md-9 {
-  background-color: #e2f4ce;
-}
-
-.navbar {
-  background-color: #e2f4ce;
-}
-
+/****************** SPYRIDON'S CSS CODE ***************************/
 .card-title {
   text-align: center;
 }
@@ -24,17 +9,25 @@
 
 /* Modify the backgorund color */
 .navbar-custom {
-  background-color: #e2f4ce;
-}
+  background-color: #a3d300b3!important;
+};
 
 h5.card-title {
   text-align: center;
 }
 
-/* Video Banner Code */
-
-/* End of Video Banner Code */
-
+/* centered columns styles */
+  .row-centered {
+    text-align:center;
+  }
+  .col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+  }
 /*image zoom hover effect*/
 .hovereffect {
   width: 100%;
@@ -114,6 +107,7 @@ h5.card-title {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+/****************** FELIPE'S CSS CODE ***************************/
 .buttons-container {
   display: flex;
   align-items: center;
@@ -164,3 +158,4 @@ h5.card-title {
   background: green;
   color: white;
 }
+/****************** PATRICIA'S CSS CODE ***************************/
