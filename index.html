@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -16,24 +17,29 @@
 </head>
 <body>
 <header>
+
+<!------------------------- SPYRIDON - HEADER ------------------------->
 	<!-- 1st row - Logo & Navigation Bar -->
-	<div class="row">
+	<div class="row bg-light">
 		<div class="col-md-3">
-			<img src="sources/cookbook_logo.jpg" class="rounded float-left" alt="Slide 1">	
+			<img src="sources/cookbook_logo.png" class="rounded float-left" alt="Slide 1">	
 		</div>
 		<div class="col-md-9">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#" background-color="#e2f4ce">Navbar</a>
+			<nav class="navbar navbar-expand-lg navbar-light mx-auto">
+  <a class="navbar-brand" href="#" background-color="#e2f4ce"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#breakfast">BREAKFAST</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#lunch">LUNCH</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#dinner">DINNER</a>
@@ -60,115 +66,153 @@
   
 </header>
  <!-- End of Video Banner -->
+<!-- END OF SPYRIDON SECTION -->
 
+<!------------------------- FELIPE - CONTENT ------------------------->
 
 <!-- 3nd row - Recipies Area - Cards inside -->
-<div class="row">
-		<div class="col-md-12">&nbsp</div>
-		
-<!-- Cards Area -->
-	<div class="row row-cols-1 row-cols-md-3">
-	<div class="col mb-4 align-items-center" id="breakfast"><button type="button" class="btn btn-secondary">BREAKFAST</button> </div>
-	<div class="col mb-4" id="dinner"><button type="button" class="btn btn-secondary">DINNER</button> </div>
-	<div class="col mb-4"><button type="button" class="btn btn-secondary">DESSERT</button> </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <div class="hovereffect">
-        <img class="img-responsive card-img-top" src="sources/bolonese.jpg" alt="">
-        <div class="overlay">
-           <h2>SPAGGETI BOLONESE</h2>
-           <a class="info" href="recipe.html">SEE THE RECIPIE</a>
+
+<div class="row" id="breakfast">
+		<div class="col-md-12" id="lunch">&nbsp</div>
+  <!-- Cards Area -->
+  <div class="container" id="dinner">
+    <div class="col-md-12" id="dessert">
+      <div class="buttons-container">
+        <button class="all-button toggle">All</button>
+        <button class="breakfast-button toggle">Breakfast</button>
+        <button class="lunch-button toggle">Lunch</button>
+        <button class="dinner-button toggle">Dinner</button>
+        <button class="dessert-button toggle">Dessert</button>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3">
+    <!-- Card 1 -->
+    <div class="col mb-4">
+      <div class="card lunch h-100">
+        <div class="hovereffect">
+          <img class="img-responsive card-img-top" src="sources/bolonese.jpg" alt="">
+          <div class="category-container">
+            <div class="category-name">
+              <p>meat</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <h2>SPAGHETTI BOLOGNESE</h2>
+            <a class="info" href="recipes/bolonese.html">SEE THE RECIPIE</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SPAGHETTI BOLOGNESE</h5>
+          </div>
         </div>
-    </div>
-      <div class="card-body">
-        <h5 class="card-title">SPAGGETI BOLONESE</h5>
       </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="sources/cardimg.jpg" class="card-img-top" alt="Card Image 2">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+    <!-- Card 2 -->
+    <div class="col mb-4">
+      <div class="card lunch h-100">
+        <div class="hovereffect">
+          <img class="img-responsive card-img-top" src="sources/breakfast_eng.jpg" alt="">
+          <div class="category-container">
+            <div class="category-name">
+              <p>meat</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <h2>ENGLISH BREAKFAST</h2>
+            <a class="info" href="recipes/breakfast_eng.html">SEE THE RECIPIE</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ENGLISH BREAKFAST</h5>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="sources/cardimg.jpg" class="card-img-top" alt="Card Image 3">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+    <!-- Card 3 -->
+    <div class="col mb-4">
+      <div class="card lunch h-100">
+        <div class="hovereffect">
+          <img class="img-responsive card-img-top" src="sources/breakfast_vegi.jpg" alt="">
+          <div class="category-container">
+            <div class="category-name">
+              <p>vegeterian</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <h2>BREAKFAST VEGI</h2>
+            <a class="info" href="recipes/breakfast_vegi.html">SEE THE RECIPIE</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">BREAKFAST VEGI</h5>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="sources/cardimg.jpg" class="card-img-top" alt="Card Image 4">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+    <!-- Card 4 -->
+    <div class="col mb-4">
+      <div class="card lunch h-100">
+        <div class="hovereffect">
+          <img class="img-responsive card-img-top" src="sources/pizza.jpg" alt="">
+          <div class="category-container">
+            <div class="category-name">
+              <p>vegeterian</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <h2>PIZZA VEGI</h2>
+            <a class="info" href="recipes/pizza_vegi.html">SEE THE RECIPIE</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">PIZZA VEGI</h5>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-   <div class="col mb-4">
-    <div class="card h-100">
-      <img src="sources/cardimg.jpg" class="card-img-top" alt="Card Image 5">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+    <!-- Card 5 -->
+    <div class="col mb-4">
+      <div class="card lunch h-100">
+        <div class="hovereffect">
+          <img class="img-responsive card-img-top" src="sources/greeksalad.jpg" alt="">
+          <div class="category-container">
+            <div class="category-name">
+              <p>vegeterian</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <h2>GREEK SALAD</h2>
+            <a class="info" href="recipes/greeksalad.html">SEE THE RECIPIE</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">GREEK SALAD</h5>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-   <div class="col mb-4">
-    <div class="card h-100">
-      <img src="sources/cardimg.jpg" class="card-img-top" alt="Card Image 6">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+    <!-- Card 6 -->
+    <div class="col mb-4">
+      <div class="card lunch h-100">
+        <div class="hovereffect">
+          <img class="img-responsive card-img-top" src="sources/cheesecake.jpg" alt="">
+          <div class="category-container">
+            <div class="category-name">
+              <p>gluten-free</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <h2>CHEESECAKE</h2>
+            <a class="info" href="recipes/cheesecake.html">SEE THE RECIPIE</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CHEESECAKE</h5>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- End of Card 6 -->
   </div>
 </div>
-
 <!-- End of Cards Area -->
 	</div>
 
-<!-- Footer -->
-<div class="row bg-light">
-	<div class="col-md-4">
-		<div class="col mb-4">
-    		<div class="card h-100">
-    			 
-     	 		<div class="card-body">
-        		<h5 class="card-title">Follow</h5>
-        		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      			</div>
-    		</div>
-  		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="col mb-4">
-    		<div class="card h-100">
-    			
-     	 		<div class="card-body">
-        		<h5 class="card-title">Contact</h5>
-        		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      			</div>
-    		</div>
-  		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="col mb-4">
-    		<div class="card h-100">
-    			
-     	 		<div class="card-body">
-        		<h5 class="card-title">Newsletter</h5>
-        		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      			</div>
-    		</div>
-  		</div>
-	</div>
-</div>
-
-<!-- Widgets Footer Area -->
-
+<!------------------------- PATRICIA - FOOTER ------------------------->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <section class="footers bg-light pt-5 pb-3">
    <div class="container pt-5">
@@ -236,5 +280,6 @@
     </div>
 </section>
 
+<script src="index.js"></script>
 </body>
 </html>
