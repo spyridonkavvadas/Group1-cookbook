@@ -22,13 +22,13 @@ const newButtonFunction = (event, category) => {
   );
   visibleCards.forEach((card) => {
     //initial
-    const initial = card.getBoundingClientRect(); //0 0
+    const initial = card.parentNode.getBoundingClientRect(); //0 0
     //final
     card.parentNode.style.display = 'block'; // 180 180
     invisibleCards.forEach((each) => {
       each.parentNode.style.display = 'none';
     });
-    const final = card.getBoundingClientRect();
+    const final = card.parentNode.getBoundingClientRect();
     invisibleCards.forEach((each) => (each.parentNode.style.display = 'block'));
     card.parentNode.style.display = 'none';
     //invert
